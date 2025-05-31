@@ -11,7 +11,7 @@ library(gt)
 library(janitor)
 ```
 
-### Problem 1. Personal data
+### Problem 1a. Personal data
 [I could calculate the mean number of steps I took on school days versus non-school days to compare how my physical activity differs depending on whether I have class. This would be informative because on school days I often walk between classes, while on non-school days I tend to be working at my job which requires constant movement for a few hours, so I expect to have more steps on those days.]
 
 
@@ -73,7 +73,8 @@ ggplot(steps_data_clean,
 
 ```
 
-
+###Problem 1c. Caption
+[Figure 1. Average daily step count is higher on non-school days than school days. The mean number of steps is greater on non-school days (n = 11) compared to school days (n = 25), with ±1 standard error whiskers and individual observations shown as semi-transparent open circles (red = school day, blue = non-school day). Step data were collected over multiple days as part of data collection for ENVS 193DS Homework 3.]
 
 ```{r}
 steps_data_summary |> #creating table using the summary data
