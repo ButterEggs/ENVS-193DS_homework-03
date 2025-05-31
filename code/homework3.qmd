@@ -100,4 +100,8 @@ tab_header( #adding title
 ### Problem 2a. Affective visualization
 I will visualize my data using a drawing of a path that splits into two. One path will lead to a "school day" while the other will lead to a "non-school day." For the path that leads to a school day it will have less steps than the path that leads to non-school day.
 
+### Problem 2b. Sketch on paper
+![Sketch of Affective Visualization for Steps vs School Day](rough draft.jpg)
+
+
 

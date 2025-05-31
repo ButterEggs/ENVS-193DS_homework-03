@@ -136,7 +136,7 @@ The following objects are masked from 'package:stats':
 </div>
 <section id="problem-1a.-personal-data" class="level3">
 <h3 class="anchored" data-anchor-id="problem-1a.-personal-data">Problem 1a. Personal data</h3>
-<p>[I could calculate the mean number of steps I took on school days versus non-school days to compare how my physical activity differs depending on whether I have class. This would be informative because on school days I often walk between classes, while on non-school days I tend to be working at my job which requires constant movement for a few hours, so I expect to have more steps on those days.]</p>
+<p>I could calculate the mean number of steps I took on school days versus non-school days to compare how my physical activity differs depending on whether I have class. This would be informative because on school days I often walk between classes, while on non-school days I tend to be working at my job which requires constant movement for a few hours, so I expect to have more steps on those days.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>steps_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"steps_data.csv"</span>))</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>steps_data_clean <span class="ot">&lt;-</span> steps_data <span class="sc">|&gt;</span> </span>
@@ -197,7 +197,7 @@ The following objects are masked from 'package:stats':
 </div>
 </div>
 </div>
-<p>###Problem 1c. Caption [Figure 1. Average daily step count is higher on non-school days than school days. The mean number of steps is greater on non-school days (n = 11) compared to school days (n = 25), with ±1 standard error whiskers and individual observations shown as semi-transparent open circles (red = school day, blue = non-school day). Step data were collected over multiple days as part of data collection for ENVS 193DS Homework 3.]</p>
+<p>###Problem 1c. Caption Figure 1. Average daily step count is higher on non-school days than school days. The mean number of steps is greater on non-school days (n = 11) compared to school days (n = 25), with ±1 standard error whiskers and individual observations shown as semi-transparent open circles (red = school day, blue = non-school day). Step data were collected over multiple days as part of data collection for ENVS 193DS Homework 3.</p>
 <p>###Problem 1d. Data Table</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>steps_data_summary <span class="sc">|&gt;</span> <span class="co">#creating table using the summary data</span></span>
@@ -215,23 +215,23 @@ The following objects are masked from 'package:stats':
 <span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="fu">tab_header</span>( <span class="co">#adding title</span></span>
 <span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Steps vs School Day"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="nlufcbaqvz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#nlufcbaqvz table {
+<div id="aoirhnzlkv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#aoirhnzlkv table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#nlufcbaqvz thead, #nlufcbaqvz tbody, #nlufcbaqvz tfoot, #nlufcbaqvz tr, #nlufcbaqvz td, #nlufcbaqvz th {
+#aoirhnzlkv thead, #aoirhnzlkv tbody, #aoirhnzlkv tfoot, #aoirhnzlkv tr, #aoirhnzlkv td, #aoirhnzlkv th {
   border-style: none;
 }
 
-#nlufcbaqvz p {
+#aoirhnzlkv p {
   margin: 0;
   padding: 0;
 }
 
-#nlufcbaqvz .gt_table {
+#aoirhnzlkv .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -257,12 +257,12 @@ The following objects are masked from 'package:stats':
   border-left-color: #D3D3D3;
 }
 
-#nlufcbaqvz .gt_caption {
+#aoirhnzlkv .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#nlufcbaqvz .gt_title {
+#aoirhnzlkv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -274,7 +274,7 @@ The following objects are masked from 'package:stats':
   border-bottom-width: 0;
 }
 
-#nlufcbaqvz .gt_subtitle {
+#aoirhnzlkv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -286,7 +286,7 @@ The following objects are masked from 'package:stats':
   border-top-width: 0;
 }
 
-#nlufcbaqvz .gt_heading {
+#aoirhnzlkv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -298,13 +298,13 @@ The following objects are masked from 'package:stats':
   border-right-color: #D3D3D3;
 }
 
-#nlufcbaqvz .gt_bottom_border {
+#aoirhnzlkv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#nlufcbaqvz .gt_col_headings {
+#aoirhnzlkv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -319,7 +319,7 @@ The following objects are masked from 'package:stats':
   border-right-color: #D3D3D3;
 }
 
-#nlufcbaqvz .gt_col_heading {
+#aoirhnzlkv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -339,7 +339,7 @@ The following objects are masked from 'package:stats':
   overflow-x: hidden;
 }
 
-#nlufcbaqvz .gt_column_spanner_outer {
+#aoirhnzlkv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -351,15 +351,15 @@ The following objects are masked from 'package:stats':
   padding-right: 4px;
 }
 
-#nlufcbaqvz .gt_column_spanner_outer:first-child {
+#aoirhnzlkv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#nlufcbaqvz .gt_column_spanner_outer:last-child {
+#aoirhnzlkv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#nlufcbaqvz .gt_column_spanner {
+#aoirhnzlkv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -371,11 +371,11 @@ The following objects are masked from 'package:stats':
   width: 100%;
 }
 
-#nlufcbaqvz .gt_spanner_row {
+#aoirhnzlkv .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#nlufcbaqvz .gt_group_heading {
+#aoirhnzlkv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -401,7 +401,7 @@ The following objects are masked from 'package:stats':
   text-align: left;
 }
 
-#nlufcbaqvz .gt_empty_group_heading {
+#aoirhnzlkv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -416,15 +416,15 @@ The following objects are masked from 'package:stats':
   vertical-align: middle;
 }
 
-#nlufcbaqvz .gt_from_md > :first-child {
+#aoirhnzlkv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nlufcbaqvz .gt_from_md > :last-child {
+#aoirhnzlkv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nlufcbaqvz .gt_row {
+#aoirhnzlkv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -443,7 +443,7 @@ The following objects are masked from 'package:stats':
   overflow-x: hidden;
 }
 
-#nlufcbaqvz .gt_stub {
+#aoirhnzlkv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -456,7 +456,7 @@ The following objects are masked from 'package:stats':
   padding-right: 5px;
 }
 
-#nlufcbaqvz .gt_stub_row_group {
+#aoirhnzlkv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -470,15 +470,15 @@ The following objects are masked from 'package:stats':
   vertical-align: top;
 }
 
-#nlufcbaqvz .gt_row_group_first td {
+#aoirhnzlkv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#nlufcbaqvz .gt_row_group_first th {
+#aoirhnzlkv .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#nlufcbaqvz .gt_summary_row {
+#aoirhnzlkv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -488,16 +488,16 @@ The following objects are masked from 'package:stats':
   padding-right: 5px;
 }
 
-#nlufcbaqvz .gt_first_summary_row {
+#aoirhnzlkv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#nlufcbaqvz .gt_first_summary_row.thick {
+#aoirhnzlkv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#nlufcbaqvz .gt_last_summary_row {
+#aoirhnzlkv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +507,7 @@ The following objects are masked from 'package:stats':
   border-bottom-color: #D3D3D3;
 }
 
-#nlufcbaqvz .gt_grand_summary_row {
+#aoirhnzlkv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -517,7 +517,7 @@ The following objects are masked from 'package:stats':
   padding-right: 5px;
 }
 
-#nlufcbaqvz .gt_first_grand_summary_row {
+#aoirhnzlkv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -527,7 +527,7 @@ The following objects are masked from 'package:stats':
   border-top-color: #D3D3D3;
 }
 
-#nlufcbaqvz .gt_last_grand_summary_row_top {
+#aoirhnzlkv .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -537,11 +537,11 @@ The following objects are masked from 'package:stats':
   border-bottom-color: #D3D3D3;
 }
 
-#nlufcbaqvz .gt_striped {
+#aoirhnzlkv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#nlufcbaqvz .gt_table_body {
+#aoirhnzlkv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -550,7 +550,7 @@ The following objects are masked from 'package:stats':
   border-bottom-color: #D3D3D3;
 }
 
-#nlufcbaqvz .gt_footnotes {
+#aoirhnzlkv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -564,7 +564,7 @@ The following objects are masked from 'package:stats':
   border-right-color: #D3D3D3;
 }
 
-#nlufcbaqvz .gt_footnote {
+#aoirhnzlkv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -573,7 +573,7 @@ The following objects are masked from 'package:stats':
   padding-right: 5px;
 }
 
-#nlufcbaqvz .gt_sourcenotes {
+#aoirhnzlkv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -587,7 +587,7 @@ The following objects are masked from 'package:stats':
   border-right-color: #D3D3D3;
 }
 
-#nlufcbaqvz .gt_sourcenote {
+#aoirhnzlkv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -595,72 +595,72 @@ The following objects are masked from 'package:stats':
   padding-right: 5px;
 }
 
-#nlufcbaqvz .gt_left {
+#aoirhnzlkv .gt_left {
   text-align: left;
 }
 
-#nlufcbaqvz .gt_center {
+#aoirhnzlkv .gt_center {
   text-align: center;
 }
 
-#nlufcbaqvz .gt_right {
+#aoirhnzlkv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nlufcbaqvz .gt_font_normal {
+#aoirhnzlkv .gt_font_normal {
   font-weight: normal;
 }
 
-#nlufcbaqvz .gt_font_bold {
+#aoirhnzlkv .gt_font_bold {
   font-weight: bold;
 }
 
-#nlufcbaqvz .gt_font_italic {
+#aoirhnzlkv .gt_font_italic {
   font-style: italic;
 }
 
-#nlufcbaqvz .gt_super {
+#aoirhnzlkv .gt_super {
   font-size: 65%;
 }
 
-#nlufcbaqvz .gt_footnote_marks {
+#aoirhnzlkv .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#nlufcbaqvz .gt_asterisk {
+#aoirhnzlkv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#nlufcbaqvz .gt_indent_1 {
+#aoirhnzlkv .gt_indent_1 {
   text-indent: 5px;
 }
 
-#nlufcbaqvz .gt_indent_2 {
+#aoirhnzlkv .gt_indent_2 {
   text-indent: 10px;
 }
 
-#nlufcbaqvz .gt_indent_3 {
+#aoirhnzlkv .gt_indent_3 {
   text-indent: 15px;
 }
 
-#nlufcbaqvz .gt_indent_4 {
+#aoirhnzlkv .gt_indent_4 {
   text-indent: 20px;
 }
 
-#nlufcbaqvz .gt_indent_5 {
+#aoirhnzlkv .gt_indent_5 {
   text-indent: 25px;
 }
 
-#nlufcbaqvz .katex-display {
+#aoirhnzlkv .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#nlufcbaqvz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#aoirhnzlkv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -701,6 +701,19 @@ The following objects are masked from 'package:stats':
 
 </div>
 </div>
+</div>
+</section>
+<section id="problem-2a.-affective-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="problem-2a.-affective-visualization">Problem 2a. Affective visualization</h3>
+<p>I will visualize my data using a drawing of a path that splits into two. One path will lead to a “school day” while the other will lead to a “non-school day.” For the path that leads to a school day it will have less steps than the path that leads to non-school day.</p>
+</section>
+<section id="problem-2b.-sketch-on-paper" class="level3">
+<h3 class="anchored" data-anchor-id="problem-2b.-sketch-on-paper">Problem 2b. Sketch on paper</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="rough%20draft.jpg" class="img-fluid figure-img"></p>
+<figcaption>Sketch of Affective Visualization for Steps vs School Day</figcaption>
+</figure>
 </div>
 </section>
 
