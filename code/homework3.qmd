@@ -1,6 +1,7 @@
 ---
 title: "homework3"
 format: html
+date: 5/30/25
 website: https://github.com/ButterEggs/ENVS-193DS_homework-03.git
 ---
 ```{r}
@@ -9,6 +10,7 @@ library(dplyr)
 library(here)
 library(gt)
 library(janitor)
+library(here)
 ```
 
 ### Problem 1a. Personal data
@@ -16,7 +18,7 @@ library(janitor)
 
 
 ```{r}
-steps_data <- read.csv("data/steps_data.csv")
+steps_data <- read.csv(here("data", "steps_data.csv"))
 steps_data_clean <- steps_data |> 
   clean_names() |>  #cleans the column names to have underscores 
   drop_na() |> 
@@ -25,7 +27,7 @@ steps_data_clean <- steps_data |>
   
 ```
 
-
+###Problem 1b. Data Visulization
 ```{r}
 steps_data_summary <- steps_data_clean |> 
 group_by(school_day) |> #group data by site
@@ -76,6 +78,7 @@ ggplot(steps_data_clean,
 ###Problem 1c. Caption
 [Figure 1. Average daily step count is higher on non-school days than school days. The mean number of steps is greater on non-school days (n = 11) compared to school days (n = 25), with ±1 standard error whiskers and individual observations shown as semi-transparent open circles (red = school day, blue = non-school day). Step data were collected over multiple days as part of data collection for ENVS 193DS Homework 3.]
 
+###Problem 1d. Data Table
 ```{r}
 steps_data_summary |> #creating table using the summary data
   gt() |>
