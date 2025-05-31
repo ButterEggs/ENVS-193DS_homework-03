@@ -14,7 +14,7 @@ library(here)
 ```
 
 ### Problem 1a. Personal data
-[I could calculate the mean number of steps I took on school days versus non-school days to compare how my physical activity differs depending on whether I have class. This would be informative because on school days I often walk between classes, while on non-school days I tend to be working at my job which requires constant movement for a few hours, so I expect to have more steps on those days.]
+I could calculate the mean number of steps I took on school days versus non-school days to compare how my physical activity differs depending on whether I have class. This would be informative because on school days I often walk between classes, while on non-school days I tend to be working at my job which requires constant movement for a few hours, so I expect to have more steps on those days.
 
 
 ```{r}
@@ -76,7 +76,7 @@ ggplot(steps_data_clean,
 ```
 
 ###Problem 1c. Caption
-[Figure 1. Average daily step count is higher on non-school days than school days. The mean number of steps is greater on non-school days (n = 11) compared to school days (n = 25), with ±1 standard error whiskers and individual observations shown as semi-transparent open circles (red = school day, blue = non-school day). Step data were collected over multiple days as part of data collection for ENVS 193DS Homework 3.]
+Figure 1. Average daily step count is higher on non-school days than school days. The mean number of steps is greater on non-school days (n = 11) compared to school days (n = 25), with ±1 standard error whiskers and individual observations shown as semi-transparent open circles (red = school day, blue = non-school day). Step data were collected over multiple days as part of data collection for ENVS 193DS Homework 3.
 
 ###Problem 1d. Data Table
 ```{r}
@@ -96,4 +96,8 @@ tab_header( #adding title
     title = "Steps vs School Day")
 
 ```
+
+### Problem 2a. Affective visualization
+I will visualize my data using a drawing of a path that splits into two. One path will lead to a "school day" while the other will lead to a "non-school day." For the path that leads to a school day it will have less steps than the path that leads to non-school day.
+
 
