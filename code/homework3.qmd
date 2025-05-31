@@ -1,0 +1,15 @@
+---
+title: "homework3"
+format: html
+website: https://github.com/ButterEggs/ENVS-193DS_homework-03.git
+---
+```{r}
+library(tidyverse)
+library(dplyr)
+library(here)
+library(gt)
+library(janitor)
+```
+
+### Problem 1. Personal data
+[I could calculate the mean number of steps I took on school days versus non-school days to compare how my physical activity differs depending on whether I have class. This would be informative because on school days I often walk between classes, while on non-school days I tend to be working at my job which requires constant movement for a few hours, so I expect to have more steps on those days.]
