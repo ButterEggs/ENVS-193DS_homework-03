@@ -13,3 +13,47 @@ library(janitor)
 
 ### Problem 1. Personal data
 [I could calculate the mean number of steps I took on school days versus non-school days to compare how my physical activity differs depending on whether I have class. This would be informative because on school days I often walk between classes, while on non-school days I tend to be working at my job which requires constant movement for a few hours, so I expect to have more steps on those days.]
+
+
+```{r}
+steps_data <- read.csv("data/steps_data.csv")
+steps_data_clean <- steps_data |> 
+  clean_names() |>  #cleans the column names to have underscores 
+  drop_na() |> 
+  mutate(steps = as.numeric(gsub(",", "", steps)))  # removes commas 
+  
+  
+```
+
+
+```{r}
+steps_data_summary <- steps_data_clean |> 
+group_by(school_day) |> #group data by site
+  summarise( #calculating summary statistics
+    n = n(),
+    mean = mean(steps),
+    sd = sd(steps),
+    se = sd / sqrt(n),
+    t_crit = qt(0.975, df = n - 2),
+    ci_lower = mean - t_crit * se,
+    ci_upper = mean + t_crit * se) |>
+  select(school_day, mean, sd, se, ci_lower, ci_upper) |>  #only display certain statistics
+  mutate(across(mean:ci_upper, ~ round(.x, 1))) #rounding those statistics
+
+steps_data_summary |> #creating table using the summary data
+  gt() |>
+  cols_label( #renaming the columns
+    school_day = "School Day",
+    mean = "Mean",
+    sd = "Standard Deviation",
+    se = "Standard Error",
+    ci_lower = "95% CI Lower",
+    ci_upper = "95% CI Upper") |>
+  fmt_number( #formating to one decimal
+    columns = everything(),
+    decimals = 1) |>
+tab_header( #adding title
+    title = "Steps vs School Day")
+
+```
+
