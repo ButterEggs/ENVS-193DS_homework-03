@@ -107,6 +107,8 @@ I will visualize my data using a drawing of a path that splits into two. One pat
 ### Problem 2d. Artist Statement
 The content of my piece shows the different variables (temp, weather, caffeine,and school-day) that may influence the outcome of how many steps I take in a day. I was influenced by my own self creativity in the creation of my digital art made on my I pad. 
 ###Problem 3a. Revisit and summarize 
+The study shows the model predictions from a generalized linear mixed effect model to assess how species cover and richness, both native and non-native, change over time and across different zones of the vernal pool. The response variable was native or non-native species cover, and the predictor variable included time since restoration and the zones in the pool. They hypothesized that exotic plant cover and richness would increase over time after restoration if management ceases and native plant cover would decrease. The model output showed that exotic plant species cover significantly increased over time in the transition (p = 0.001) and upland zones (p < 0.001) and native plant species cover significantly increased over time in the central zones (p = 0.030) but decreased in the transition zones (p = 0.004).
+
 
 
 
