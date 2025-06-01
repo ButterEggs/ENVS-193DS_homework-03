@@ -3,6 +3,9 @@ title: "homework3"
 format: html
 date: 5/30/25
 website: https://github.com/ButterEggs/ENVS-193DS_homework-03.git
+excecute: 
+  warning: false
+  message: false 
 ---
 ```{r}
 library(tidyverse)
@@ -10,10 +13,10 @@ library(dplyr)
 library(here)
 library(gt)
 library(janitor)
-library(here)
 ```
 
 ### Problem 1a. Personal data
+
 I could calculate the mean number of steps I took on school days versus non-school days to compare how my physical activity differs depending on whether I have class. This would be informative because on school days I often walk between classes, while on non-school days I tend to be working at my job which requires constant movement for a few hours, so I expect to have more steps on those days.
 
 
@@ -27,7 +30,7 @@ steps_data_clean <- steps_data |>
   
 ```
 
-###Problem 1b. Data Visulization
+### Problem 1b. Data Visulization
 ```{r}
 steps_data_summary <- steps_data_clean |> 
 group_by(school_day) |> #group data by site
@@ -75,10 +78,11 @@ ggplot(steps_data_clean,
 
 ```
 
-###Problem 1c. Caption
+### Problem 1c. Caption
+
 Figure 1. Average daily step count is higher on non-school days than school days. The mean number of steps is greater on non-school days (n = 11) compared to school days (n = 25), with ±1 standard error whiskers and individual observations shown as semi-transparent open circles (red = school day, blue = non-school day). Step data were collected over multiple days as part of data collection for ENVS 193DS Homework 3.
 
-###Problem 1d. Data Table
+### Problem 1d. Data Table
 ```{r}
 steps_data_summary |> #creating table using the summary data
   gt() |>
@@ -98,29 +102,32 @@ tab_header( #adding title
 ```
 
 ### Problem 2a. Affective visualization
+
 I will visualize my data using a drawing of a path that splits into two. One path will lead to a "school day" while the other will lead to a "non-school day." For the path that leads to a school day it will have less steps than the path that leads to non-school day.
 
 ### Problem 2b. Sketch on paper
 ![Sketch of Affective Visualization for Steps vs School Day](rough draft.jpg)
+
 ### Problem 2c. Draft of Visualization
 ![Visualization for Steps vs School Day](visualization.png)
+
 ### Problem 2d. Artist Statement
-The content of my piece shows the different variables (temp, weather, caffeine,and school-day) that may influence the outcome of how many steps I take in a day. I was influenced by my own self creativity in the creation of my digital art made on my I pad. 
-###Problem 3a. Revisit and summarize 
+
+The content of my piece shows the different variables (temp, weather, caffeine,and school-day) that may influence the outcome of how many steps I take in a day. I was influenced by my own self creativity in the creation of my digital art made on my I pad.
+
+### Problem 3a. Revisit and summarize 
+
 The study shows the model predictions from a generalized linear mixed effect model to assess how species cover and richness, both native and non-native, change over time and across different zones of the vernal pool. The response variable was native or non-native species cover, and the predictor variable included time since restoration and the zones in the pool. They hypothesized that exotic plant cover and richness would increase over time after restoration if management ceases and native plant cover would decrease. The model output showed that exotic plant species cover significantly increased over time in the transition (p = 0.001) and upland zones (p < 0.001) and native plant species cover significantly increased over time in the central zones (p = 0.030) but decreased in the transition zones (p = 0.004).
 ![Figure from HW 2](figure1.jpg)
-###Problem 3b. Visual clarity 
-The underlying data is shown through the exotic percent cover vs time since restoration, and also the various zones. The data is visualized clearly as the author uses different color trend lines to show the data from the different zones and also GLMER estimates and ± SE as linear models. They also include asterisks to indicate a significant interaction between zone and time since restoration for exotic percent cover (p < 0.05) which allows for more clarity.
 
-###Problem 3c. Aesthetic clarity
-The aesthetics are shown to have no visual clutter and has a good data to ink ratio. The data is concise and proportional showing percent cover from 0-275% and time from 0-35 years.The ink ratio is good since the lines are nice and proportional for the entire graph although there is a halo outlining the lines that does not give anymore insight into the data, so there is slight visual clutter. 
+### Problem 3b. Visual clarity 
 
+The underlying data is shown through the exotic percent cover vs time since restoration, and also the various zones. The data is visualized clearly as the author uses different color trend lines to show the data from the different zones and also GLMER predictions and 95% CI as linear models. They also include asterisks to indicate a significant interaction between zone and time since restoration for exotic percent cover (p < 0.05) which allows for more clarity.
 
+### Problem 3c. Aesthetic clarity
 
+The aesthetics are shown to have no visual clutter and has a good data to ink ratio. The data is concise and proportional showing percent cover from 0-100% and time from 0-9 years.The ink ratio is good since the lines are nice and proportional for the entire graph although there is a halo outlining the lines that does not give anymore insight into the data, so there is slight visual clutter. 
 
+### Problem 3d. Recommendations 
 
-
-
-
-
-
+For the halo around the linear models, I would recommend stating what it does to help further explain the data, since they don't state it in the plot or in the figure description. For the jitter points I would have the individual points spread out a little more vertically so you could see the individual observations for percent cover. I would have also noted what the asterisks indicate in the legend so I could understand that data without looking at the figure description. For the colors I also would have chose more bright colors instead of gray to help better visualize the linear model.
