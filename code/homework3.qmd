@@ -102,6 +102,7 @@ I will visualize my data using a drawing of a path that splits into two. One pat
 
 ### Problem 2b. Sketch on paper
 ![Sketch of Affective Visualization for Steps vs School Day](rough draft.jpg)
-
+### Problem 2c. Draft of Visualization
+![Visualization for Steps vs School Day](visualization.png)
 
 
